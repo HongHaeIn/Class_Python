@@ -8,38 +8,38 @@ class Pdf_Package:
 
         if (menu == 1):
             print("1번 [국어] 로 이동합니다.")
-            import WWWPJ.pdf_korean
-            show_file = WWWPJ.pdf_korean.pdf_Korean_package()
+            import WWWPJ.PDF.pdf_korean
+            show_file = WWWPJ.PDF.pdf_korean.pdf_Korean_package()
             show_file.show_pdffile()
 
         elif (menu == 2):
             print("2번 [수학] 로 이동합니다.")
-            import WWWPJ.pdf_math
-            show_file = WWWPJ.pdf_math.pdf_Math_package()
+            import WWWPJ.PDF.pdf_math
+            show_file = WWWPJ.PDF.pdf_math.pdf_Math_package()
             show_file.show_pdffile()
 
         elif (menu == 3):
             print("3번 [영어] 로 이동합니다.")
-            import WWWPJ.pdf_english
-            show_file = WWWPJ.pdf_english.pdf_English_package()
+            import WWWPJ.PDF.pdf_english
+            show_file = WWWPJ.PDF.pdf_english.pdf_English_package()
             show_file.show_pdffile()
 
         elif (menu == 4):
             print("4번 [과학] 로 이동합니다.")
-            import WWWPJ.pdf_science
-            show_file = WWWPJ.pdf_science.pdf_Science_package()
+            import WWWPJ.PDF.pdf_science
+            show_file = WWWPJ.PDF.pdf_science.pdf_Science_package()
             show_file.show_pdffile()
 
         elif (menu == 5):
             print("4번 [자바] 로 이동합니다.")
-            import WWWPJ.pdf_java
-            show_file = WWWPJ.pdf_java.pdf_Java_package()
+            import WWWPJ.PDF.pdf_java
+            show_file = WWWPJ.PDF.pdf_java.pdf_Java_package()
             show_file.show_pdffile()
 
         elif (menu == 6):
             print("4번 [C언어] 로 이동합니다.")
-            import WWWPJ.pdf_C
-            show_file = WWWPJ.pdf_C.pdf_C_package()
+            import WWWPJ.PDF.pdf_c
+            show_file = WWWPJ.PDF.pdf_c.pdf_C_package()
             show_file.show_pdffile()
 
         else:

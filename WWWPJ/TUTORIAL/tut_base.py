@@ -1,10 +1,8 @@
-class pdf_Java_package:
-    def show_pdffile(self):
-        print("자바PDF:", "https://drive.google.com/drive/folders/1T1Mei0ElAXIQ9QeHU3w18JR49yeqM5Hi?usp=sharing")
-
+class Base:
+    def tutBase(self):
         print("========BACKFINISHMENU=========")
         print("1. MAINMENU")
-        print("2. PDFMENU")
+        print("2. TUTORIAL")
         print("3. FINISH")
 
         menu = input('메뉴를 선택하세요: ')  # 사용자가 메뉴 선택
@@ -14,12 +12,12 @@ class pdf_Java_package:
             print("MAINMENU로 이동합니다.")
             import WWWPJ.menu
             show_file = WWWPJ.menu.Mainmenu()
-            show_file.menu()
+            show_file.mainmenu()
 
         elif (menu == 2):
-            print("PDFMENU로 이동합니다.")
-            import WWWPJ.pdf
-            show_file = WWWPJ.pdf.Pdf_Package()
+            print("TUTORIAL로 이동합니다.")
+            import WWWPJ.tutorial
+            show_file = WWWPJ.tutorial.Tutorial_Package()
             show_file.detailmenu()
 
         elif (menu == 3):

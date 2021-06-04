@@ -1,7 +1,5 @@
-class pdf_English_package:
-    def show_pdffile(self):
-        print("영어PDF:", "https://drive.google.com/drive/folders/1EMt1U4S3-3ydWsu23QSqkMhZ3JWS1K7u?usp=sharing")
-
+class Base:
+    def pdfBase(self):
         print("========BACKFINISHMENU=========")
         print("1. MAINMENU")
         print("2. PDFMENU")
@@ -14,7 +12,7 @@ class pdf_English_package:
             print("MAINMENU로 이동합니다.")
             import WWWPJ.menu
             show_file = WWWPJ.menu.Mainmenu()
-            show_file.menu()
+            show_file.mainmenu()
 
         elif (menu == 2):
             print("PDFMENU로 이동합니다.")

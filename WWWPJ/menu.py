@@ -2,7 +2,7 @@
 # # 기능
 # # 메인 메뉴: pdf, 강의, 자습서, 환경설정
 # # 디테일 메뉴:
-# #     Pdf 메뉴:
+# #     pdf 메뉴:
 # #         국어 / 수학 / 영어 / 과학 / 자바 / C언어
 # #     강의 메뉴:
 # #         DB / Php / Jsp / Java / Python / DS / C / Wsm / Spring
@@ -13,41 +13,42 @@
 #
 
 class Mainmenu:
-    print("========MAINMENU=========")
-    print("1. PDF모음")
-    print("2. 강의추천")
-    print("3. 자습서추천")
-    print("4. 환경설정")
+    def mainmenu(self):
+        print("========MAINMENU=========")
+        print("1. PDF모음")
+        print("2. 강의추천")
+        print("3. 자습서추천")
+        print("4. 환경설정")
 
-    menu = input('메뉴를 선택하세요: ')  #사용자가 메뉴 선택
-    menu = int(menu)                  #인덱스를 위해 문자를 순자로
+        menu = input('메뉴를 선택하세요: ')  #사용자가 메뉴 선택
+        menu = int(menu)                  #인덱스를 위해 문자를 순자로
 
-    if (menu ==1):
-        print("1번 [PDF모음] 메뉴로 이동합니다.")
-        import WWWPJ.pdf
-        show_menu = WWWPJ.pdf.Pdf_Package()
-        show_menu.detailmenu()
+        if (menu ==1):
+            print("1번 [PDF모음] 메뉴로 이동합니다.")
+            import WWWPJ.pdf
+            show_menu = WWWPJ.pdf.Pdf_Package()
+            show_menu.detailmenu()
 
-    elif (menu ==2):
-        print("2번 [강의추천] 메뉴로 이동합니다.")
-        import WWWPJ.lecture
-        show_menu = WWWPJ.lecture.Lecture_Package()
-        show_menu.detailmenu()
+        elif (menu ==2):
+            print("2번 [강의추천] 메뉴로 이동합니다.")
+            import WWWPJ.lecture
+            show_menu = WWWPJ.lecture.Lecture_Package()
+            show_menu.detailmenu()
 
-    elif (menu ==3):
-        print("3번 [자습서추천] 메뉴로 이동합니다.")
-        import WWWPJ.tutorial
-        show_menu = WWWPJ.tutorial.Tutorial_Package()
-        show_menu.detailmenu()
+        elif (menu ==3):
+            print("3번 [자습서추천] 메뉴로 이동합니다.")
+            import WWWPJ.tutorial
+            show_menu = WWWPJ.tutorial.Tutorial_Package()
+            show_menu.detailmenu()
 
-    elif (menu ==4):
-        print("4번 [환경설정] 메뉴로 이동합니다.")
-        import WWWPJ.enviroment
-        show_menu = WWWPJ.enviroment.Enviroment_Package()
-        show_menu.detailmenu()
+        elif (menu ==4):
+            print("4번 [환경설정] 메뉴로 이동합니다.")
+            import WWWPJ.enviroment
+            show_menu = WWWPJ.enviroment.Env_Package()
+            show_menu.detailmenu()
 
-    else:
-        print("1-4번을 선택하여 주십시오.")
+        else:
+            print("1-4번을 선택하여 주십시오.")
 
 
 

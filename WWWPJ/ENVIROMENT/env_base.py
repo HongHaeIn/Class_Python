@@ -1,10 +1,8 @@
-class pdf_Science_package:
-    def show_pdffile(self):
-        print("과학PDF:", "https://drive.google.com/drive/folders/16qMbGNN1cyAZ4XssjU7zs3ziqe7XspE9?usp=sharing")
-
+class Base:
+    def envBase(self):
         print("========BACKFINISHMENU=========")
         print("1. MAINMENU")
-        print("2. PDFMENU")
+        print("2. ENVIROMENTMENU")
         print("3. FINISH")
 
         menu = input('메뉴를 선택하세요: ')  # 사용자가 메뉴 선택
@@ -14,12 +12,12 @@ class pdf_Science_package:
             print("MAINMENU로 이동합니다.")
             import WWWPJ.menu
             show_file = WWWPJ.menu.Mainmenu()
-            show_file.menu()
+            show_file.mainmenu()
 
         elif (menu == 2):
-            print("PDFMENU로 이동합니다.")
-            import WWWPJ.pdf
-            show_file = WWWPJ.pdf.Pdf_Package()
+            print("ENVIROMENTMENU로 이동합니다.")
+            import WWWPJ.enviroment
+            show_file = WWWPJ.enviroment.Env_Package()
             show_file.detailmenu()
 
         elif (menu == 3):
