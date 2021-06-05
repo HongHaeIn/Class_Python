@@ -1,9 +1,10 @@
 class tutorial_Db_package:
     def show_tutfile(self):
+        print("========DB_TUTORIAL=========")
         print("1. Head First SQL : 효율적인 DB 관리를 위한 SQL 학습법\n"
             +"2. 실전 DB 모델링과 SQL for ORACLE")
 
-        import WWWPJ.TUTORIAL.tut_base
-        show_menu = WWWPJ.TUTORIAL.tut_base.Base()
-        show_menu.tutBase()
+        import WWWPJ.TUTORIAL.tut_base                  #TUTORIAL 폴더 속 tut_base 파일로 임폴트 하자
+        show_menu = WWWPJ.TUTORIAL.tut_base.Base()      #tut_base 파일에 Base 클래스에 들어가자
+        show_menu.tutBase()                             #Base 클래스에 tutBase 함수를 보여주자
 

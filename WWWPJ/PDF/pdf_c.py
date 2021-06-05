@@ -1,8 +1,9 @@
 class pdf_C_package:
     def show_pdffile(self):
-        print("C언어PDF:", "https://drive.google.com/drive/folders/1RcUjxbwaHjnriK56DM7MyyMfkwfhYueA?usp=sharing")
+        print("========C_PDF=========")
+        print("[ C언어 PDF ]", "https://drive.google.com/drive/folders/1RcUjxbwaHjnriK56DM7MyyMfkwfhYueA?usp=sharing")
 
-        import WWWPJ.PDF.pdf_base
-        show_file = WWWPJ.PDF.pdf_base.Base()
-        show_file.pdfBase()
+        import WWWPJ.PDF.pdf_base                  #PDF 폴더 속 pdf_base 파일로 임폴트 하자
+        show_file = WWWPJ.PDF.pdf_base.Base()      #pdf_base 파일에 Base 클래스에 들어가자
+        show_file.pdfBase()                        #Base 클래스에 pdfBase 함수를 보여주자
 

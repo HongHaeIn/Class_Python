@@ -1,9 +1,9 @@
 class Base:
-    def envBase(self):
+    def lecBase(self):
         # BACKMENU: 1.MAINMENU, 2.PDFMENU, 3.FINISH
         print("========BACKMENU=========")
         print("1. MAINMENU")
-        print("2. ENVIROMENTMENU")
+        print("2. LECTURE")
         print("3. FINISH")
 
         menu = input('메뉴를 선택하세요: ')                    #사용자가 메뉴 선택하게 하자
@@ -16,13 +16,14 @@ class Base:
             show_file.mainmenu()                            #Mainmenu 클래스에 mainmenu 함수를 보여주자
 
         elif (menu == 2):
-            print("ENVIROMENTMENU로 이동합니다.")
-            import WWWPJ.enviroment                        #enviroment 파일로 임폴트 하자
-            show_file = WWWPJ.enviroment.Env_Package()     #enviroment 파일에 Env_Package 클래스에 들어가자
-            show_file.detailmenu()                         #Env_Package 클래스에 detailmenu 함수를 보여주자
+            print("LECTURE로 이동합니다.")
+            import WWWPJ.lecture                            #enviroment 파일로 임폴트 하자
+            show_file = WWWPJ.lecture.Lecture_Package()     #enviroment 파일에 Env_Package 클래스에 들어가자
+            show_file.detailmenu()                          #Env_Package 클래스에 detailmenu 함수를 보여주자
 
         elif (menu == 3):
-            print("프로그램을 종료합니다.")                    #프로그램을 종료하는 메세지를 보내주자
+            print("프로그램을 종료합니다.")                     #프로그램을 종료하는 메세지를 보내주자
 
         else:
-            print("1-3을 선택하여 주십시오.")                  #1번부터 3번까지 고르지 않았을 경우엔 에러메세지를 보내주자
+            print("1-3을 선택하여 주십시오.")                   #1번부터 3번까지 고르지 않았을 경우엔 에러메세지를 보내주자
+

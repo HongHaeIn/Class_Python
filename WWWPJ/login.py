@@ -5,8 +5,8 @@
 #      4. 전공을 + 이름 환영합니다
 
 class Login:
-    def show(id,pw):
-        print("-------로그인 정보-------")
+    def show(id, pw):
+        print("========LOGIN=========")
         print("ID : " + id)
         print("PW : " + pw)
         major = pw[:1] #과추출
