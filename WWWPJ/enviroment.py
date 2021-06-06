@@ -3,7 +3,7 @@ class Env_Package:
         print("========ENVIROMENTMENU=========")
         print("[ 1. DB | 2. Php | 3.Jsp | 4. Java | 5. C | 6. Android ]")
 
-        menu = input('메뉴를 선택하세요: ')                                         #사용자가 메뉴 선택하게 하자
+        menu = input('메뉴를 선택하세요: ')                                        #사용자가 메뉴 선택하게 하자
         menu = int(menu)                                                        #인덱스를 위해 문자를 순자로 바꿔주자
 
         if (menu == 1):
