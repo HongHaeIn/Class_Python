@@ -1,6 +1,6 @@
 class env_Jsp_package:
     def show_envfile(self):
-        print("========JSP_ENVIROMENT=========")
+        print('\033[94m'+"========JSP_ENVIROMENT=========")
         print("1. JDK(Java SE Development Kit) 설치하기\n"
             +"(자바 기반의 프로그램을 작성하기 위해서는 컴파일러 및 실행환경이 필요함)\n"
             +"Jsp를 사용하기 위해 필수적으로 설치하기")
@@ -12,7 +12,7 @@ class env_Jsp_package:
         print("5. 변수 Path 에서 편집을 눌러 변수 값 C:/Program Files/Java/jsk1.8.0_101/bin 내용을 추가하기\n"
             +"(자바 버전에 따라 설치된 경로명은 바뀔 수 있음)")
         print("6. 확인을 눌러 저장 후 정상적으로 설치가 되었는지 확인해보려면 명령 프롬프트를 실행해\n"
-            +"java와 javas 를 입력해보기")
+            +"java와 javas 를 입력해보기"+'\033[0m')
 
         import WWWPJ.ENVIROMENT.env_base                #LECTURE 폴더 속 lec_base 파일로 임폴트 하자
         show_menu = WWWPJ.ENVIROMENT.env_base.Base()    #lec_base 파일에 Base 클래스에 들어가자

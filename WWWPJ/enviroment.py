@@ -1,7 +1,13 @@
 class Env_Package:
     def detailmenu(self):
-        print("========ENVIROMENTMENU=========")
-        print("[ 1. DB | 2. Php | 3.Jsp | 4. Java | 5. C | 6. Android ]")
+        print('￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣')
+        print('| 　ENVIROMENTMENU!　　　　　　　　　　　　　　　   　　  [－][口][×] |')
+        print('| ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣ |')
+        print('| 　＿＿＿　　＿＿＿＿　　＿＿＿＿　　 ＿＿＿＿    ＿＿＿　  ＿＿＿＿＿＿  |')
+        print('| ｜1.DB | ｜2.PHP ｜ |3.Jsp |  |4.Java |  |5.C |  |6.Android|  |')
+        print('| 　￣￣￣　　￣￣￣￣　　￣￣￣￣　　 ￣￣￣￣　   ￣￣    ￣￣￣￣￣￣   |')
+        print('￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣')
+
 
         menu = input('메뉴를 선택하세요: ')                                        #사용자가 메뉴 선택하게 하자
         menu = int(menu)                                                        #인덱스를 위해 문자를 순자로 바꿔주자
@@ -43,4 +49,14 @@ class Env_Package:
             show_file.show_envfile()                                            #env_Android_package 클래스에 show_envfile 함수를 보여주자
 
         else:
-            print("1-6번을 선택하여 주십시오.")                                     #1번부터 6번까지 고르지 않았을 경우엔 에러메세지를 보내주자
+            print(" ╭┈┈┈┈╯   ╰┈┈┈╮")
+            print("  ╰┳┳╯  ╰┳┳╯")
+            print("   💧 　　 💧")
+            print("  💧　 　　 💧")
+            print(" 💧   ╰┈┈╯   💧  ")
+            print(" 💧  ╭━━━━━╮　 💧")
+            print("   💧  ┈┈┈┈   1-6을 선택해 주세요ㅠㅠ  ")
+            # 1번부터 6번까지 고르지 않았을 경우엔 에러메세지를 보내주자
+            import WWWPJ.enviroment                                             # enviroment 파일로 임폴트 하자
+            show_file = WWWPJ.enviroment.Env_Package()                          # enviroment 파일에 Env_Package 클래스에 들어가자
+            show_file.detailmenu()                                              # Env_Package 클래스에 detailmenu 함수를 보여주자

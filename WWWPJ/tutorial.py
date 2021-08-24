@@ -1,6 +1,12 @@
 class Tutorial_Package:
     def detailmenu(self):
-        print("[1. DB / 2. Php / 3. Jsp / 4. Java / 5. Python / 6. DS / 7. C / 8. Wsm / 9. Spring ]")
+        print('￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣')
+        print('| 　TUTORIALMENU!　　   　　　　　　　　　　　　　   　　                               [－][口][×]  |')
+        print('| ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣  |')
+        print('| 　＿＿＿　　＿＿＿＿　 ＿＿＿＿　    ＿＿＿＿　　 ＿＿＿＿＿＿   ＿＿＿    ＿＿　   ＿＿＿＿    ＿＿＿＿＿   |')
+        print('| ｜1.DB | ｜2.Php ｜ ｜2.Jsp ｜  |3.Java |  |4.Python | ｜5.DS | |7.C |  |8.Wsm |  |9.Spring|  |')
+        print('| 　￣￣￣　　￣￣￣￣　　 ￣￣￣￣    ￣￣￣￣　　  ￣￣￣￣￣　   ￣￣￣   ￣￣    ￣￣￣￣    ￣￣￣￣￣    |')
+        print('￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣')
 
         menu = input('메뉴를 선택하세요: ')                                         #사용자가 메뉴 선택하게 하자
         menu = int(menu)                                                        #인덱스를 위해 문자를 순자로 바꿔주자
@@ -60,4 +66,14 @@ class Tutorial_Package:
             show_file.show_tutfile()                                            #tutorial_Spring_package 클래스에 show_tutfile 함수를 보여주자
             
         else:
-            print("1-9번까지 선택하여 주십시오.")                                    #1번부터 9번까지 고르지 않았을 경우엔 에러메세지를 보내주자
+            print(" ╭┈┈┈┈╯   ╰┈┈┈╮")
+            print("  ╰┳┳╯  ╰┳┳╯")
+            print("   💧 　　 💧")
+            print("  💧　 　　 💧")
+            print(" 💧   ╰┈┈╯   💧  ")
+            print(" 💧  ╭━━━━━╮　 💧")
+            print("   💧  ┈┈┈┈   1-6을 선택해 주세요ㅠㅠ  ")
+            # 1번부터 6번까지 고르지 않았을 경우엔 에러메세지를 보내주자
+            import WWWPJ.tutorial                                               # tutorial 파일로 임폴트 하자
+            show_file = WWWPJ.tutorial.Tutorial_Package()                       # tutorial 파일에 Tutorial_Package 클래스에 들어가자
+            show_file.detailmenu()                                               # Tutorial_Package 클래스에 detailmenu 함수를 보여주자

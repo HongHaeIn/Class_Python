@@ -1,8 +1,12 @@
 class Pdf_Package:
     def detailmenu(self):
-        #pdf메뉴: 1.국어, 2.수학, 3.영어, 4.과학, 5.자바, 6.C언어
-        print("========PDFMENU=========")
-        print("[ 1.국어 | 2.수학 | 3.영어 | 4.과학 | 5.자바 | 6.C언어 ]")
+        print('ㄴ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣')
+        print('| 　PDFMENU!　　       　　　　　　　　　　　　　   　　  [－][口][×]   |')
+        print('| ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣  |')
+        print('| 　＿＿＿　　＿＿＿＿　　＿＿＿＿　　 ＿＿＿＿＿＿    ＿＿　   ＿＿＿＿    |')
+        print('| ｜1.국어 | ｜2.수학 ｜ |3.영어 |  |4.과학 |  |5.자바 |  |6.C언어 |  |')
+        print('| 　￣￣￣　　￣￣￣￣　　￣￣￣￣　　  ￣￣￣￣￣　   ￣￣     ￣￣￣￣    |')
+        print('￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣')
 
         menu = input('메뉴를 선택하세요: ')                            #사용자가 메뉴 선택하게 하자
         menu = int(menu)                                            #인덱스를 위해 문자를 순자로 바꿔주자
@@ -44,5 +48,13 @@ class Pdf_Package:
             show_file.show_pdffile()                                #pdf_C_package 클래스에 show_pdffile 함수를 보여주자
 
         else:
-            print("1-6번을 선택하여 주십시오.")                          #1번부터 6번까지 고르지 않았을 경우엔 에러메세지를 보내주자
-
+            print(" ╭┈┈┈┈╯   ╰┈┈┈╮")
+            print("  ╰┳┳╯  ╰┳┳╯")
+            print("   💧 　　 💧")
+            print("  💧　 　　 💧")
+            print(" 💧   ╰┈┈╯   💧  ")
+            print(" 💧  ╭━━━━━╮　 💧")
+            print("   💧  ┈┈┈┈   1-6을 선택해 주세요ㅠㅠ  ")             # 1번부터 6번까지 고르지 않았을 경우엔 에러메세지를 보내주자
+            import WWWPJ.pdf                                         # pdf 파일로 임폴트 하자
+            show_file = WWWPJ.pdf.Pdf_Package()                      # pdf 파일에 Pdf_Package 클래스에 들어가자
+            show_file.detailmenu()                                   # Pdf_Package 클래스에 detailmenu 함수를 보여주자
