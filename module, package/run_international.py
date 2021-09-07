@@ -11,6 +11,8 @@ print(math.sin(math.pi/2))  #1.0
 import random
 print('-'*20)
 print(random.random())          #0.0 <= r < 1.0
+
+
 print(random.randrange(1, 10))  #1 <= r < 10 정수
 print(random.randint(1, 10))    #1 <= r <= 10 정수
 list1 = ['김치찌개', '비빔면', '안먹고 잠']
