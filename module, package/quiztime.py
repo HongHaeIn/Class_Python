@@ -80,3 +80,4 @@ print('자리\t학생번호')
 for index, n in enumerate(list_class):
     print(f'{index +1}\t{n}')
 
+
