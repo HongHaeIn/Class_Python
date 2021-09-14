@@ -1,35 +1,30 @@
-#숫자 야구 게임
-#퀴즈 내자(숫자 3자리 중복 없이)
+#숫자야구게임
+import random
+#퀴즈내자 숫자 3자리 중복없이
 def make_quiz():
-    #숫자 3자리 중복 업이
-    return "238"
+    #숫자 3자리 중복없이
+    list_r = random.sample(range(1, 9 + 1), 3)
+    string_number = "".join(map(str, list_r))
 
-answer = make_quiz()
-print(answer)
-
+    return string_number
 
 def check(answer, player):
     strike = 0
     ball = 0
-    #번호가 있고 자리가 같으면 strike += 1
-    #번호가 있고 자리가 다르면 ball += 1
+    for i, p in enumerate(player):
+        for j, a in enumerate(answer):
+            if p == a:  #번호가 같으면
+                if i == j:  #번호가 있고, 자리가 같으면 strike += 1
+                    strike += 1
+                else:   #번호가 있고, 자리가 다르면 ball += 1
+                    ball += 1
+
     return strike, ball
 
-
-#무한반복
-while True:
-    #숫자 3자리 중복없이 묻자
-    player = input("숫자 세자리를 입력하세요 >>> ")
-    #strike, ball 확인하자
-    strike, ball = (check(answer, player)
-    #출력하자
-    print(f'{player}\tstrike: {strike}\tball : {ball}')
-    #strike가 3일 때 나가자
-    if strike == 3:
-        break
-#축하해주자
-
-answer = make_quiz()
-print(answer)
-check("238", "241")
-print(strike, ball)
+if __name__ == '__main__':
+    answer = make_quiz()
+    print(answer)
+    strike, ball = check("238", "241")
+    print(strike, ball)     #1 0
+    strike, ball = check("381", "182")
+    print(strike, ball)     #1 1
