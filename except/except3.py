@@ -7,8 +7,7 @@ try:
     # print(list1[3])
     # #IndexError
 except IndexError as e:
-    print(e)
-    #list index out of range
+    print(e)        #list index out of range
 except:
     pass
 else:

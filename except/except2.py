@@ -5,9 +5,9 @@
 # print(list1[1])
 # print(list1[2])
 # print(list1[3]) #IndexError: list index out of range
-#
+
 # print(list2)    #NameError: name 'list2' is not defined
-#
+
 print(10/10)    #1.0
 print(5/10)     #0.5
 print(1/10)     #0.1
