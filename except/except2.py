@@ -1,4 +1,3 @@
-
 # print(int('안녕'))    #ValueError: invalid literal for int() with base 10: '안녕'
 
 # list1 = [1, 2, 3]

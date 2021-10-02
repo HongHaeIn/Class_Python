@@ -4,9 +4,11 @@ try:
     print(list1[0])
     print(list1[1])
     print(list1[2])
-    # print(list1[3])     #IndexError
+    # print(list1[3])
+    # #IndexError
 except IndexError as e:
-    print(e)    #list index out of range
+    print(e)
+    #list index out of range
 except:
     pass
 else:
