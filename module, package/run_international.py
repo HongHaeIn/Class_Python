@@ -1,4 +1,3 @@
-
 import math
 print(math.ceil(3.5))       #4  천장  올림
 print(math.ceil(3.4))       #4

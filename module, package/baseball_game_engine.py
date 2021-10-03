@@ -1,5 +1,4 @@
 #숫자야구게임
-
 import random
 #퀴즈내자 숫자 3자리 중복없이
 def make_quiz():
