@@ -6,8 +6,3 @@
 
 # f.close()
 
-i = 1
-if(i ==1):
-    print(False)
-else:
-    print(True)
