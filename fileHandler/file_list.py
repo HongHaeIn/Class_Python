@@ -1,3 +1,4 @@
+
 import os
 data = os.listdir('.') #현재디렉터리
 p

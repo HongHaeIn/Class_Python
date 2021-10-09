@@ -1,4 +1,3 @@
-
 #파일 저장하자
 with open('my_favorite_music.txt', 'w', encoding='utf-8') as f:
     f.write('이선우:너를생각해(경서)\n')

@@ -1,4 +1,3 @@
-
 f = open('text.txt', 'w', encoding='utf-8')
 
 f.write('hello')
