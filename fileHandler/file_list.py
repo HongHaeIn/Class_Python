@@ -1,6 +1,7 @@
 import os
 data = os.listdir('.') #현재디렉터리
-print(data)
+p
+rint(data)
 
 for d in data:
     print(d)
