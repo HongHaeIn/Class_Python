@@ -1,3 +1,4 @@
+
 # 파이썬 객체 그대로 저장하자
 import pickle
 from person import Person
