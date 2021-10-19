@@ -1,4 +1,3 @@
-
 import pickle
 from person import Person
 
