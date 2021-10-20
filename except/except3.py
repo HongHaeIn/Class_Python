@@ -1,5 +1,6 @@
 list1 = [1, 5, 7]
 
+
 try:
     print(list1[0])
     print(list1[1])

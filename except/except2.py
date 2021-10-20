@@ -8,6 +8,7 @@
 
 # print(list2)    #NameError: name 'list2' is not defined
 
+
 print(10/10)    #1.0
 print(5/10)     #0.5
 print(1/10)     #0.1
