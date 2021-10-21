@@ -1,3 +1,4 @@
+
 print('한꺼번에 전체 읽기')
 # f = open('text.txt', 'r', encoding='utf-8')
 # data = f.read()
