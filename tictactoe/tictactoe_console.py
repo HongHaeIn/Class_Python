@@ -1,4 +1,3 @@
-
 class TictactoeConsole:
     def __init__(self):
         self.game_engine = TictactoeGameEngine()
