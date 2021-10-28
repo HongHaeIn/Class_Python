@@ -1,4 +1,3 @@
-
 class TictactoeGameEngine:
     def __init__(self):
         self.SIZE = 3
